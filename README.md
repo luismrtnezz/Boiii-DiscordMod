@@ -83,7 +83,7 @@ set sv_wwwDownload "1"
 set sv_wwwBaseURL "https://downloads.example.com/"
 ```
 
-Replace the example URL with your publicly reachable download root. The release contains a shared `zone/workshop.json` and a `manifest.json` for its exact files. Keep `FolderName` and `PublisherID` set to `discord_mod`; the repository name is `boiii_discord_mod`.
+Replace the example URL with your publicly reachable download root. The release contains a shared `zone/workshop.json` and a `manifest.json` for its exact files. Keep `FolderName` and `PublisherID` set to `discord_mod`; the repository name is `Boiii-DiscordMod`.
 
 The manifest uses relative file paths, sizes and SHA-1 hashes. The FastDL host URL is configured separately in `sv_wwwBaseURL`, so multiple hosts can serve the same release and manifest.
 
