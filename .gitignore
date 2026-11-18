@@ -1,0 +1,6 @@
+# Local build output and tools
+build/
+*.log
+
+# Generated release archives
+dist/
