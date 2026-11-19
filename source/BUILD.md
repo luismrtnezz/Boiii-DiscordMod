@@ -16,3 +16,5 @@ The CSC entry point uses `LuiLoad("ui_scripts.discord.boiii_discord")`. The MP a
 The runtime server scripts under `boiii/custom_scripts/mp` and `boiii/custom_scripts/zm` are compiled and loaded by BOIII. See the project's [GSC scripting documentation](https://github.com/Ezz-lol/boiii-free/blob/beta/docs/gsc-scripting.md).
 
 The source files and compiled fastfiles were collected from the current installation. The fastfiles matched byte for byte between the tested client and dedicated server. A fresh Mod Tools rebuild has not been performed for this repository preparation, so reproducibility against the supplied binaries remains unverified.
+
+After building the English pair, the distribution copies each English localization fastfile to every additional language prefix listed in the main README. MP copies come from en_mp_mod.ff and ZM copies come from en_zm_mod.ff. Include these copies when regenerating the FastDL manifest and release checksums.

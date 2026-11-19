@@ -40,6 +40,18 @@ Both server scripts are supplied for the respective MP and ZM modes. BOIII compi
 
 If installing from the repository checkout, copy its `mods` and `boiii` directories into the server directory.
 
+## Language files
+
+The package includes MP and ZM localization fastfiles for all 23 language prefixes listed in BOIII's language definitions.
+
+`en`, `fr`, `fc`, `ge`, `as`, `it`, `es`, `br`, `ru`, `po`, `ko`, `ja`, `cz`, `fj`, `bp`, `ms`, `ar`, `tc`, `sc`, `eg`, `ej`, `he`, `ea`.
+
+For each prefix, the archive contains `<prefix>_mp_mod.ff` and `<prefix>_zm_mod.ff`. The additional files are byte-for-byte copies of the corresponding English fastfiles. They supply the filenames requested by each client language. The server CFG still controls the button label.
+
+See [BOIII's language definitions](https://github.com/Ezz-lol/boiii-free/blob/beta/src/client/game/structs/seh.hpp) for the prefix mapping.
+
+Upload the full `mods/discord_mod` folder to FastDL, including all language files and the updated `manifest.json`. The abbreviated trees and URL examples below show only the English pair.
+
 ## Configure the invitation
 
 Add these settings to the CFG executed by your server. An editable example is available in `config/discord.example.cfg`.
@@ -147,4 +159,4 @@ For normal installation, use the prebuilt release package. Publishing the source
 
 The button and browser confirmation were tested with left-click and Cross on a PlayStation controller, including switching between both devices. Cancellation and browser opening were verified. The current engine's per-URL rejection behavior was also checked.
 
-This package includes MP and ZM assets. A separate, complete ZM deployment test and additional client languages remain pending.
+This package includes MP and ZM assets with localization filenames for all 23 language prefixes. The additional files were verified against their English originals. In-game checks across every client language and a separate, complete ZM deployment test remain pending.
